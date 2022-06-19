@@ -21,6 +21,21 @@
                 border-radius: 17px;
                 color: white;
 		}
+		#footer {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			left: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 87px;
+			background-color: #1f2937;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
     </style>
 </head>
 <body>
@@ -29,6 +44,9 @@
     <h3 style="text-align: center;">You will receive an email regarding your Journey.</h3>
     <h3 style="text-align: center;">Thank You for using EasyFlight!</h3>
     <button id="sus" onclick="window.open('./index.html','_self')">Back To Home</button>
+    <div id="footer">
+		<p style="color: white;text-align: center;">Website Made By <a href="./ananya.html">Ananya</a>,<a href="./anup.html">Anup</a>,<a>Aswin</a>,<a href="./cv.html">Sri Ganesh</a></p>
+    </div>
     <script>
         var namee = document.getElementById("name").innerHTML;
         var first = window.sessionStorage.getItem("fnamee");
