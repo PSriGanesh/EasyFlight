@@ -117,7 +117,9 @@
             #button {
                 width: 100px;
                 height: 30px;
+                display: block;
                 border: none;
+                margin: 0px auto;
                 border-radius: 17px;
                 color: rgb(55, 38, 204);
             }
@@ -140,7 +142,7 @@
         </style>
 
         <div class="info">
-            <form>
+            <form action="./flights.html">
                 <table>
 
                     <tr>
@@ -251,18 +253,16 @@
                                     <td><label><b>Returning Date:</b></label></td>
                                     <td colspan=2><input type="date">
                                 </tr>
-                                <tr>
-                                    <td colspan=3 align="center"><button id="button" onclick="return show('login','fromto')">Book Now</button></td>
-                                </tr>
-                                <tr>
-                                    <td colspan=3 align="center"><input type="reset" id="button"></td>
-                                </tr>
                             </table>
                             </td>
                     </tr>
 
                 </table>
                 </form>
+                <form action="./flights.html">
+                <input type="submit" value="Book Now" id="button"><br><br>
+                <input type="reset" id="button" style="margin-top: -30px;">
+				</form>
         </div>
     </div>
     <div id="login" style="display:none;">
@@ -372,7 +372,7 @@
             }
         </style>
 
-        <h2 style="margin-top: 75px;">Login Page</h2><br>
+        <h2 style="margin-top: 75px;color: #08ffd1;">Login Page</h2><br>
         <div class="login">
             <form id="login" action="flights.html">
                 <label><b>User Name</b></label>
