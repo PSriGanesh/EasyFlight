@@ -18,7 +18,7 @@
             overflow: hidden;
             padding-top: 32px;
             margin-top: -40px;
-            padding-left: 60px;
+            padding: 30px 100px 5px 100px;
             background: #23463f;
             border-radius: 15px;
         }
@@ -143,6 +143,10 @@
         #rem {
             color: white;
         }
+        #plot {
+			display: flex;
+			justify-content: center;
+		}
     </style>
 </head>
 
@@ -159,6 +163,7 @@
 		</div>
     </ul>
     <h2 style="margin-top: -30px;color: #08ffd1;">Information</h2><br>
+    <div id="plot">
     <div class="info">
         <form action="uid13.html">
             <label><b>*Passenger Name</b></label>
@@ -245,6 +250,7 @@
             <input type="reset" id="lo" style="width: 100px;margin-left: 482px;"><br>
         </form>
         <a href="flights.html" style="text-decoration: none; color:black;background-color:#23463f;padding-right:20px ;"><span id="rem">back</span></a>
+    </div>
     </div>
     <script>
         function setitem() {
